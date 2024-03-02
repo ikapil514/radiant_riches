@@ -14,10 +14,12 @@ function HighlightCard({ data }) {
   }
   //Array
   return (
-    <div className="rounded ml-5 pl-3 p-1 bg-blue-200">
+    <div className="rounded ml-5 pl-3 p-1 bg-[#f3f9ff]">
       {data.map((item, inx) => (
-        <div key={inx} className="flex">
-          <h2 className=" text-blue-700 mr-3 font-medium">{item.number}</h2>
+        <div key={inx} className="flex mt-2">
+          <h2 className=" text-primaryblue mr-3 bg-[#fbfcfd] shadow-sm px-2 rounded-md font-medium">
+            {item.number}
+          </h2>
           <h2>{item.string}</h2>
         </div>
       ))}
