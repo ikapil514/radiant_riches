@@ -1,0 +1,177 @@
+.navbar {
+  padding: 7px;
+  height: 53px;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.navbar-search {
+  height: 38px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.nav-btn {
+  height: 38px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.main-div {
+  padding: 0 100px;
+  padding-top: 40px;
+}
+
+.info-div {
+  display: flex;
+}
+
+.info {
+  margin-right: 25px;
+}
+
+.page-nav {
+  margin-top: 25px;
+  display: flex;
+}
+
+.div-container {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin-top: 30px;
+}
+
+.box {
+  height: 330px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imageDiv {
+  height: 150px;
+  width: 150px;
+  background-image: url(./computer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.textDiv {
+  height: 300px;
+  width: 400px;
+}
+
+.ratingDiv {
+  padding: 5px;
+  height: 200px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.three-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  height: 350px;
+  width: 300px;
+  padding: 15px;
+}
+
+.signup-parent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  background: rgb(33, 39, 49);
+  background: linear-gradient(
+    0deg,
+    rgba(33, 39, 49, 1) 0%,
+    rgba(33, 39, 49, 1) 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.signup-div {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #212731;
+  border-radius: 10px;
+}
+
+.sign-text {
+  font-weight: 500;
+  font-size: 25px;
+  width: 60%;
+}
+
+.footer-div {
+  background-color: #212731;
+  padding: 25px 0;
+  color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 800px) {
+  .main-div {
+    padding: 40px 20px;
+  }
+  .sign-text {
+    width: 100%;
+    text-align: center;
+  }
+  .signup-div {
+    display: block;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .box {
+    flex-direction: column;
+    height: 100%;
+  }
+  .textDiv {
+    margin-top: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .ratingDiv {
+    width: 100%;
+    height: 200px;
+    justify-content: space-evenly;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .navbar-search {
+    display: none;
+  }
+  .info-div {
+    display: block;
+  }
+  .page-nav {
+    display: none;
+  }
+  .sign-text {
+    font-size: 25px;
+  }
+}
