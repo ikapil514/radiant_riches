@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Button } from "@mui/material";
 import starRating from "../Star_Rating.svg";
 import { TiTick } from "react-icons/ti";
-import { HiOutlineTrophy } from "react-icons/hi2";
+import { HiOutlineTrophy, HiOutlineReceiptPercent } from "react-icons/hi2";
 import { MdDiamond } from "react-icons/md";
 
 function HighlightCard({ data }) {
@@ -45,6 +45,14 @@ function MainCard({ data }) {
             Best Value
           </div>
         )}
+        {data.badge_type === "20%" && (
+          <div className="flex items-center w-[100px] h-[30px] bg-[#ff7724] rounded-r-md">
+            <span className="m-1">
+              <HiOutlineReceiptPercent />
+            </span>
+            26% OFF
+          </div>
+        )}
       </div>
       <div className="box">
         <div className="">
@@ -68,7 +76,7 @@ function MainCard({ data }) {
                 ))}
             </div>
           </div>
-          <button className="flex text-blue-600 text-center items-center mt-2">
+          <button className="flex text-primaryblue text-center items-center mt-2">
             Show more
             <span className="ml-1">
               <IoIosArrowDown />
@@ -76,9 +84,9 @@ function MainCard({ data }) {
           </button>
         </div>
         <div className="ratingDiv">
-          <div className="text-center flex flex-col justify-evenly items-center h-[60%]">
-            <h2 className="text-3xl">{data.rating}</h2>
-            <h2 className="text-blue-600">{data.ratingTxt}</h2>
+          <div className="rating-box text-center flex flex-col justify-evenly items-center h-[60%]">
+            <h2 className="text-3xl text-darkblue">{data.rating}</h2>
+            <h2 className="text-darkblue">{data.ratingTxt}</h2>
             <img src={starRating} alt="img" />
           </div>
           <Button variant="contained">View</Button>

@@ -33,7 +33,7 @@ export const Card = [
     ratingTxt: "Exceptional",
   },
   {
-    badge_type: "",
+    badge_type: "20%",
     builder: "CDK",
     headlineText: "CDK Resposive Builder: ",
     smallText:

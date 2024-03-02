@@ -104,7 +104,7 @@ export default function App() {
               <IoIosArrowForward />
             </span>
           </button>
-          <button className=" flex items-center text-blue-500 font-semibold">
+          <button className=" flex items-center text-primaryblue font-semibold">
             Hosting 5
           </button>
         </div>
