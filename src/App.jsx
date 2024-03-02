@@ -138,7 +138,7 @@ export default function App() {
         </div>
       </div>
       <div className="footer-div">
-        <div className="text-center">
+        <div>
           <h2 className="text-white uppercase text-lg">Contact</h2>
           <h2>About</h2>
           <h2>Contact</h2>
@@ -146,7 +146,7 @@ export default function App() {
           <h2>Privacy Policy</h2>
           <h2>Terms Of Service</h2>
         </div>
-        <div className="text-center">
+        <div>
           <h2 className="text-white uppercase text-lg">Categories</h2>
           <h2 className="text-base">Hosting</h2>
           <h2 className="text-base">Web Builder</h2>
